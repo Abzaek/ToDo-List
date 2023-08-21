@@ -13,9 +13,9 @@ document.getElementById('taskForm').addEventListener('submit', function(e) {
     let isDoneCell = document.createElement('td');
     let deleteCell = document.createElement('td');
 
-    descriptionCell.textContent = taskDescription;
+    descriptionCell.textContent = taskDescription ? taskDescription : "Not set";
     isDoneCell.textContent = isDone ? 'Yes' : 'No';
-    deadlineCell.textContent = deadline;
+    deadlineCell.textContent = deadline ? deadline : "Not set";
     
     
     let deleteButton = document.createElement('button');
@@ -26,6 +26,8 @@ document.getElementById('taskForm').addEventListener('submit', function(e) {
         var row = this.closest('tr');
         row.remove();
     });
+    // let leftContainer = document.querySelector('.left-container');
+    // leftContainer.style.height = '100%';
 
     newRow.appendChild(descriptionCell);
     newRow.appendChild(deadlineCell);
