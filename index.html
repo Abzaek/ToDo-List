@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>ToDo-List</title>
+</head>
+<body>
+    <div class="left-container">
+        <form action="get">
+            <div>
+                <label for="Task">Task Description</label>
+                <input type="text" name="Task" id="Task">
+            </div>
+           <div>
+            <label for="isDone">is-Done..?</label>
+            <input type="checkbox" name="isDone" id="isDone">
+           </div>
+        <div>
+            <label for="datetime">Deadline..?</label>
+            <input type="datetime" name="datetime" id="datetime">
+        </div>
+        <div>
+            <input type="submit" class="buttons">
+            <input type="reset" class="buttons">
+        </div>
+        
+        </form>
+    </div>
+    <div class="right-container">
+        <table>
+            <tr>
+                <th>Task Description</th>
+                <th>Day Time</th>
+                <th>is Done..?</th>
+                <th></th>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><button class="buttons">DELETE</button></td>
+            </tr>
+            
+        </table>
+    </div>
+</body>
+</html>
