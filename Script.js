@@ -22,6 +22,11 @@ document.getElementById('taskForm').addEventListener('submit', function(e) {
     deleteButton.textContent = 'DELETE';
     deleteButton.classList.add('buttons');
 
+    deleteButton.addEventListener('click', function() {
+        var row = this.closest('tr');
+        row.remove();
+    });
+
     newRow.appendChild(descriptionCell);
     newRow.appendChild(deadlineCell);
     newRow.appendChild(isDoneCell);
