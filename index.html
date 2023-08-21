@@ -8,36 +8,38 @@
     <title>ToDo-List</title>
 </head>
 <body>
-    <div class="left-container">
-        <form id="taskForm">
+    <div class="container">
+        <div class="left-container">
+            <form id="taskForm">
+                <div>
+                    <label for="Task">Task Description</label>
+                    <input type="text" name="Task" id="Task">
+                </div>
+               <div>
+                <label for="isDone">is-Done..?</label>
+                <input type="checkbox" name="isDone" id="isDone">
+               </div>
             <div>
-                <label for="Task">Task Description</label>
-                <input type="text" name="Task" id="Task">
+                <label for="datetime">Deadline..?</label>
+                <input type="date" name="datetime" id="datetime">
             </div>
-           <div>
-            <label for="isDone">is-Done..?</label>
-            <input type="checkbox" name="isDone" id="isDone">
-           </div>
-        <div>
-            <label for="datetime">Deadline..?</label>
-            <input type="date" name="datetime" id="datetime">
+            <div>
+                <input type="submit" class="buttons">
+                <input type="reset" class="buttons">
+            </div>
+            
+            </form>
         </div>
-        <div>
-            <input type="submit" class="buttons">
-            <input type="reset" class="buttons">
+        <div class="right-container">
+            <table>
+                    <tr>
+                        <th>Task Description</th>
+                        <th>Day Time</th>
+                        <th>is Done..?</th>
+                        <th></th>
+                    </tr>
+            </table>
         </div>
-        
-        </form>
-    </div>
-    <div class="right-container">
-        <table>
-                <tr>
-                    <th>Task Description</th>
-                    <th>Day Time</th>
-                    <th>is Done..?</th>
-                    <th></th>
-                </tr>
-        </table>
     </div>
     <script src="Script.js"></script>
 </body>

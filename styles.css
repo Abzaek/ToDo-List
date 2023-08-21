@@ -4,12 +4,18 @@ body {
     display: flex;
     gap: 0.8em;
     justify-content: center;
-    flex-direction: column;
     align-items: center;
     font-family: 'Montserrat', sans-serif;
     font-size: 1.25em;
     background-color: orange;
     
+}
+.container {
+    display: flex;
+    align-items: center;
+    background-color: aqua;
+    border-radius: 0.5em;
+    padding: 2.1em;
 }
 form {
     display: flex;
@@ -30,8 +36,8 @@ input {
 }
 .buttons {
     font-size: large;
-    padding: 1.3rem 2.1rem;
-    border-radius: 0.5rem;
+    padding: 1.3em 2.1em;
+    border-radius: 0.5em;
     border: none;
     background-color: blue;
 }
