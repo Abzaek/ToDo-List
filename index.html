@@ -18,7 +18,7 @@
                             <input type="text" class="form-control" name="Task" id="Task">
                         </div>
                         <div class="form-group col-md-3">
-                            <label for="datetime">Deadline</label>
+                            <label for="datetime">Day Time</label>
                             <input type="date" class="form-control" name="datetime" id="datetime">
                         </div>
                         <div class="form-group col-md-3">
@@ -34,7 +34,7 @@
                 </form>
             </div>
             <div class="col-md-12 mt-5">
-                <table class="table table-striped">
+                <table id="mytable" class="table table-striped">
                     <thead>
                         <tr>
                             <th>Task Description</th>
@@ -43,7 +43,7 @@
                             <th></th>
                         </tr>
                     </thead>
-                    <tbody id="tbody">
+                    <tbody>
                         <!-- Task entries will be added here dynamically using JavaScript -->
                     </tbody>
                 </table>
