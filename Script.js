@@ -4,9 +4,6 @@ document.getElementById('taskForm').addEventListener('submit', function(e) {
     let taskDescription = document.getElementById('Task').value;
     let isDone = document.getElementById('isDone').checked;
     let deadline = document.getElementById('datetime').value;
-    
-    // Reset Button deletes all table entries
-    
 
     function formToTable() {
         let tableBody = document.querySelector('table');
@@ -43,7 +40,7 @@ document.getElementById('taskForm').addEventListener('submit', function(e) {
     !taskDescription ? !deadline ? alert("Your submission is empty") : alert("please enter your task description") : !deadline ? alert("please enter the deadline") : formToTable();
 });
 
-
+//Added action listener to reset button 
 document.getElementById('resetBtn').addEventListener('click', function() {
     console.log("clicked")
     var mytable = document.querySelector("#mytable");  
